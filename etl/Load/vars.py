@@ -1,0 +1,2 @@
+WAREHOUSR_USERNAME = "postgres"
+WAREHOUSE_PASSWORD = "postgres"

@@ -1,0 +1,5 @@
+SOURCE_KEYWORD = "uk-road-safety-accidents-and-vehicles" 
+WAREHOUSE_HOST = "localhost"
+WAREHOUSE_SCHEMA = "kaggle"
+WAREHOUSE_USERNAME = "postgres"
+WAREHOUSE_PASSWORD = "postgres"

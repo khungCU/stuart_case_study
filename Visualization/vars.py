@@ -1,0 +1,6 @@
+USER_NAME = "postgres"
+PASSWORD = "postgres"
+SCHEMA_NAME = "kaggle"
+TARGET_HOST = "localhost"
+ACCIDENT_TABLE_NAME = "stg_accident_information"
+VEHICLE_TABLE_NAME = "stg_vehicle_information"

@@ -1,13 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
-from Transformation.model import Stg_vehicle_information_schema, Stg_accident_information_schema
-import logging
-
-#Creating and Configuring logging
-logging.basicConfig(format="%(asctime)s [%(levelname)s] %(message)s")
-logging.root.setLevel(logging.INFO)
-logger = logging.getLogger("TransfomLog")
-
+from etl.Transformation.model import Stg_vehicle_information_schema, Stg_accident_information_schema
+from etl.Logger import logger
 
 class Transformer:
     def __init__(self, user_name, password, schema_name = "kaggle", target_host="localhost"):

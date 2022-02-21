@@ -1,6 +1,9 @@
 __pycache__
 kaggle.json
 history.csv
-Extraction/data/uk-road-safety-accidents-and-vehicles
+etl/Extraction/data
+dags/data
 .vscode
 .ipynb_checkpoints
+data
+.pytest_cache
