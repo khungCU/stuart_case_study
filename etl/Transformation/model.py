@@ -34,9 +34,9 @@ class Stg_accident_information_schema(pa.SchemaModel):
     
     accident_index: Series[str] = pa.Field(unique=True)
     first_road_class: Series[str]
-    first_road_number:  Series[float]
+    first_road_number:  Series[int]
     second_road_class: Series[str]
-    second_road_number: Series[float]
+    second_road_number: Series[int]
     accident_severity: Series[str]
     day_of_week: Series[str]
     junction_control: Series[str]
@@ -44,7 +44,7 @@ class Stg_accident_information_schema(pa.SchemaModel):
     police_force: Series[str]
     road_surface_conditions: Series[str]
     road_type: Series[str]
-    speed_limit: Series[float]
+    speed_limit: Series[int]
     urban_or_rural_area: Series[str]
     weather_conditions: Series[str]
     year: Series[int]
