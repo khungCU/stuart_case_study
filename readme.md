@@ -66,21 +66,23 @@ There are folders and files in the root directory here I'm going to introduce th
 
 
 ## __How you would test for correctness, i.e. reconcile.__
-Here I would have more discussion with the person who have better knowlege on traffic accident to determine the corretness with that said for now I would
+Here I would have more discussion with the person who have better knowledge on traffic accident to determine the corretness with that said for now I would
 Benchmarking the data set by profiling the source data including (I will go with the great_expectation):
-    - Data row count (more or less 20% or raise error)
-    - Null data (more or less 10% or raise error)
-    - Categorical data defination (ex: Animal should include cat, dog, ... but if there is a iphone in the column this should raise an error...)
-    - Common sense, for example I aware there are drivers with age below 15 which dont make sense so I filter out.
+
+- &nbsp; Data row count (more or less 20% or raise error)
+- &nbsp; Null data (more or less 10% or raise error)
+- &nbsp; Categorical data defination (ex: Animal should include cat, dog, ... but if there is a iphone in the column this should raise an error...)
+- &nbsp; Common sense, for example I aware there are drivers with age below 15 which dont make sense so I filter out.
 
 
 ## __How would I really polish the challenge to build this project in production?__
 The main idea of this project is to present the concept of how I will handle these tasks doesn't mean I will do this on production. It just a simple project for demostrate purpose.
-&nbsp; For dags I probably will use Airflow because its Python & ability of the scale (K8S or CeleryExecutor)
-&nbsp; For Transformation I will use Snowflake/Redshift + dbt or PySpark (DBT to me is a game changer which I would definitely like to have more hands-on experience in the future)
-&nbsp; For Load & Extraction In general I will use Fivetran or Stitch however in this case with kaggle API I will still use my own scripts
-&nbsp; For the stroage solution I will definately go with S3 furthermore instead of csv files I will convert in parquet file or split into smaller file first and store in S3
-&nbsp; For Visualization I will use Tableau or powerBI, Tableau able to connect to various of sources easily to fetch data in data mart and build the dashboard without the pain.
+
+- &nbsp; For dags I probably will use Airflow because its Python & ability of the scale (K8S or CeleryExecutor)
+- &nbsp; For Transformation I will use Snowflake/Redshift + dbt or PySpark (DBT to me is a game changer which I would definitely like to have more hands-on experience in the future)
+- &nbsp; For Load & Extraction In general I will use Fivetran or Stitch however in this case with kaggle API I will still use my own scripts
+- &nbsp; For the stroage solution I will definately go with S3 furthermore instead of csv files I will convert in parquet file or split into smaller file first and store in S3
+- &nbsp; For Visualization I will use Tableau or powerBI, Tableau able to connect to various of sources easily to fetch data in data mart and build the dashboard without the pain.
 
 
 
